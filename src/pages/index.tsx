@@ -23,7 +23,8 @@ const CreatePostWizard = () => {
   const { mutate, isLoading: isPosting } = api.posts.create.useMutation({
     onSuccess: () => {
       setInput("");
-      ctx.posts.getAll.invalidate();
+      // ignore awaiting promise using void
+      void ctx.posts.getAll.invalidate();
     },
   });
 
