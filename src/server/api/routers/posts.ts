@@ -76,9 +76,11 @@ export const postsRouter = createTRPCRouter({
       z.object({
         content: z
           .string()
-          .emoji("Your emojeet can only contain emojis.")
-          .min(1)
-          .max(280),
+          .min(1, { message: "Your emojeet must contain at least one emoji." })
+          .max(280, {
+            message: "Your emojeet cannot contain more than 140 emojis.",
+          })
+          .emoji({ message: "Your emojeet can only contain emojis." }),
       })
     )
     .mutation(async ({ ctx, input }) => {
