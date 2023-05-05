@@ -43,7 +43,7 @@ const CreatePostWizard = () => {
   }
 
   return (
-    <div className="flex gap-4">
+    <div className="flex items-center gap-4">
       <Image
         src={user.profileImageUrl}
         alt="Profile image"
@@ -53,7 +53,7 @@ const CreatePostWizard = () => {
       />
       {/* a11y? */}
       <label htmlFor="emojeet-input" className="sr-only">
-        Compose your emojeet
+        Compose your emojeet!
       </label>
       <input
         placeholder="Compose your emojeet!"
@@ -64,7 +64,15 @@ const CreatePostWizard = () => {
         onChange={(e) => setInput(e.target.value)}
         disabled={isPosting}
       />
-      <button onClick={() => mutate({ content: input })}>Post</button>
+      <div>
+        <button
+          className="rounded-md border-2 border-solid border-slate-400 px-5 py-1"
+          onClick={() => mutate({ content: input })}
+          disabled={isPosting}
+        >
+          Post
+        </button>
+      </div>
     </div>
   );
 };
