@@ -54,13 +54,13 @@ const CreatePostWizard = () => {
         placeholder="Compose your emojeet!"
         id="emojeet-input"
         type="text"
-        className="w-1/2 sm:w-auto rounded-md border border-solid bg-transparent px-2 py-1 placeholder:italic placeholder:text-slate-600 enabled:border-slate-600"
+        className="w-4/5 rounded-md border border-solid bg-transparent px-2 py-1 placeholder:italic placeholder:text-slate-600 enabled:border-slate-600 sm:w-auto"
         value={input}
         onChange={(e) => setInput(e.target.value)}
         disabled={isPosting}
       />
       <button
-        className="w-1/2 rounded-md border-2 border-solid border-slate-400 px-5 py-1 sm:w-auto"
+        className="w-4/5 rounded-md border-2 border-solid border-slate-400 px-5 py-1 sm:w-auto"
         onClick={() => mutate({ content: input })}
         disabled={isPosting}
       >
