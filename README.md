@@ -1,6 +1,6 @@
 # Emojitter
 
-This is an emoji only twitter clone bootstrapped with `create-t3-app` [T3 Stack](https://create.t3.gg/), a way to build typesafe Next.js apps.
+[Emojitter](https://emojitter-six.vercel.app/) is an emoji only twitter clone bootstrapped with `create-t3-app` [T3 Stack](https://create.t3.gg/), a way to build typesafe Next.js apps.
 
 ## Tech used
 
