@@ -19,7 +19,7 @@ const config = {
     defaultLocale: "en",
   },
   images: {
-    domains: ["images.clerk.dev"],
+    domains: ["img.clerk.com"],
   },
   typescript: {
     ignoreBuildErrors: true,
