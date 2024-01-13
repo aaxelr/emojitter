@@ -40,7 +40,7 @@ const CreatePostWizard = () => {
   return (
     <div className="flex flex-col items-center gap-4 sm:flex-row">
       <Image
-        src={user.profileImageUrl}
+        src={user.imageUrl}
         alt="Profile image"
         className="h-16 w-16 rounded-full"
         width={64}
